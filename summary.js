@@ -4,7 +4,7 @@ var score = document.querySelector('#score');
 if (!localStorage.getItem('user')) {
     location.href = "index.html";
 } else {
-    congratsHeader.textContent = `Congulations ${localStorage.getItem('user')}`;
+    congratsHeader.textContent = `Congratulations ${localStorage.getItem('user')}`;
     score.innerHTML = `Your Score is ${parseInt(localStorage.getItem('score'))}`;
 }
 
