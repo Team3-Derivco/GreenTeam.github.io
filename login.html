@@ -4,13 +4,13 @@
 <head>
     <meta charset="utf-8">
     <title>MovieNight
-        
+
     </title>
     <link rel="stylesheet" href="stylesheet.css">
     <style type="text/css">
         /* nav#nav1{margin: 100px; } */
-        nav#nav1 > a{
-           
+        
+        nav#nav1>a {
             background: #B9E1FF;
             color: #000;
             padding: 10px;
@@ -18,20 +18,26 @@
             border-radius: 5px;
             font-family: "Arial Black", Gadget, sans-serif;
         }
-        nav#nav1 > a:hover{background:red;}
-        nav#nav1 > a:active{background: #EEFFA8;}
-        </style>
-         <script>
-                var playBtn = new Audio();
-                playBtn.src="button-7.mp3";
-                playBtn.play();
-                </script>
-        <script>
+        
+        nav#nav1>a:hover {
+            background: red;
+        }
+        
+        nav#nav1>a:active {
+            background: #EEFFA8;
+        }
+    </style>
+    <script>
+        var playBtn = new Audio();
+        playBtn.src = "button-7.mp3";
+        playBtn.play();
+    </script>
+    <script>
         var bleep = new Audio();
         bleep.src = "centuryfox.mp3";
         bleep.play();
         //bleep.autoplay;
-        </script>
+    </script>
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
     <!---->
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
@@ -41,8 +47,8 @@
 
 
     <header>MovieNight
-        <img src="popcorn.gif" width="200px" height="200px" align="right"/>
-        <img src="popcorn.gif" width="200px" height="200px" align="left"/>
+        <img src="popcorn.gif" width="200px" height="200px" align="right" />
+        <img src="popcorn.gif" width="200px" height="200px" align="left" />
     </header>
 
     <div class="Login">
@@ -52,11 +58,34 @@
         </form>
     </div>
 
-    <div onclick="getUser()" class="play-button-outer" class="center" id = "getUser">
-        <div class="play-button" class="center"  onmousedown="playBtn.play()"></div>
+    <style type="text/css">
+        /* nav#nav1{margin: 100px; } */
+        
+        nav#nav1>a {
+            background: grey;
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: "Arial Black", Gadget, sans-serif;
+            font-size: 20px;
+            font-style: italic;
+        }
+        
+        nav#nav1>a:hover {
+            background: red;
+        }
+        
+        nav#nav1>a:active {
+            background: red;
+        }
+    </style>
+
+    <div onclick="getUser()" class="play-button-outer" class="center" id="getUser">
+        <div class="play-button" class="center" onmousedown="playBtn.play()"></div>
     </div>
-    <img src="popcorn.gif" width="200px" height="200px" align="right"/>
-    <img src="popcorn.gif" width="200px" height="200px" align="left"/>
+    <img src="popcorn.gif" width="200px" height="200px" align="right" />
+    <img src="popcorn.gif" width="200px" height="200px" align="left" />
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
@@ -73,7 +102,7 @@
         // create database 
         const database = firebase.database();
     </script>
-    
+
     <script src="CurrentUsers.js"></script>
 
 </body>

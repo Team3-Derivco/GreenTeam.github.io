@@ -1,21 +1,18 @@
-
 @font-face {
     font-family: BebasNeue;
     src: url("BebasNeue Bold.ttf");
-
-
 }
-*{
-    margin:0;
-    padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: BebasNeue;
     background: linear-gradient(to bottom, black, grey) fixed;
-    font-size: 8vw;
- 
-    
+    font-size: 5vw;
 }
-header{
+
+header {
     padding-top: 60px;
     color: red;
     font-size: 150px;
@@ -23,58 +20,55 @@ header{
     font-family: BebasNeue;
 }
 
-.selectionHeader{
+.selectionHeader {
     padding-top: 0px;
     color: red;
     font-size: 100px;
     text-align: center;
     font-family: BebasNeue;
 }
+
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  }
+}
 
-
-.Login{
+.Login {
     color: red;
-    padding-top:200px;
+    padding-top: 200px;
     font-size: 80px;
     text-align: center;
 }
 
-.login-input{
-
-padding-top: 500px;
+.login-input {
+    padding-top: 500px;
 }
 
-#play{
+#play {
     border: none;
-    padding:0;
+    padding: 0;
     background: none;
     border-radius: 50%
 }
 
 input[type=text] {
-    width: 30%;
+    width: 80%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
     background: white
-  }
+}
 
-
-.Genres >*{
+.Genres>* {
     text-align: center;
     margin: 20px 0px;
     display: block;
     padding-top: 200px
-
 }
 
-.genre{
+.genre {
     display: block;
     widows: 500px;
     padding: 5px;
@@ -88,52 +82,48 @@ input[type=text] {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-
-
 }
+
 .play-button-outer {
     margin: 5% auto;
     width: 10em;
     height: 10em;
     background-color: rgba(0, 0, 0, .25);
     cursor: pointer;
-    
-  }
-  
-  .play-button {
+}
+
+.play-button {
     margin: 0 auto;
-    top: 25%;
-    position: relative;  
+    position: relative;
     width: 0;
     height: 0;
     border-style: solid;
     border-width: 2.5em 0 2.5em 5em;
     border-color: transparent transparent transparent red;
-    opacity: .75; 
-  }
-  
-  .play-button-outer:hover {
-    background-color: red;
-  }
-  
-  .play-button-outer:hover .play-button {
-    opacity: 1;
-  }
+    opacity: .75;
+}
 
-.genre:hover{
-    
+.play-button-outer:hover {
+    background-color: red;
+}
+
+.play-button-outer:hover .play-button {
+    opacity: 1;
+}
+
+.genre:hover {
     background: red;
     cursor: pointer;
     color: white
-
 }
-h1{
+
+h1 {
     color: white;
     text-align: center;
     font-size: 60px;
 }
 
-#leaderboard{
+#leaderboard {
     color: white;
     font-size: 60px;
     padding-top: 20px;
@@ -141,81 +131,70 @@ h1{
     border: 10px;
     border-color: white;
     text-align: center
-
 }
 
-table#leaderboard-table{
+table#leaderboard-table {
     padding-top: 40px;
     font-size: 30px;
 }
 
-#leaderboard-div{
+#leaderboard-div {
     padding-top: 60px;
 }
 
-#column-titles{
+#column-titles {
     font-size: 50px;
-
 }
 
-#highest-score{
-
-    color:red;
-
+#highest-score {
+    color: red;
 }
 
-#report-score{
+#report-score {
     font-size: 50px;
     color: red;
     text-align: center;
     padding-top: 100px;
 }
 
-
-
-
-.time{
- 
+.time {
     display: inline-block;
     animation: change 10.6s linear 0s infinite normal, pulse 0.5s infinite alternate;
-    height:100px;
+    height: 100px;
     width: 50px;
     float: left;
-    padding-left:49%;
-
-   
+    padding-left: 49%;
 }
 
-.score{
-    
-    font-size:30px;
+.score {
+    font-size: 30px;
     color: white;
-    padding-top:0
-
+    padding-top: 0
 }
 
 @keyframes change {
-    from { color: green }
-    to   { color: red }
+    from {
+        color: green
+    }
+    to {
+        color: red
+    }
 }
-@keyframes pulse{
+
+@keyframes pulse {
     0% {
         font-size: 50px;
-      
-      }
-      100% {
-       font-size: 100px; 
-      }
-    
+    }
+    100% {
+        font-size: 100px;
+    }
 }
 
-
-
-header#game-page{
-    left:49%;
+header#game-page {
+    left: 49%;
     clear: left;
     text-align: center;
-    font-size:100px;
+    font-size: 100px;
 }
 
 button.answer-choice {
@@ -227,121 +206,113 @@ button.answer-choice {
     text-decoration: none;
     display: inline-block;
     font-size: 50px;
-  }
+}
 
-  button.answer-choice:hover {
-    background-color:black;
+button.answer-choice:hover {
+    background-color: black;
     border: white;
-    color: white;;
+    color: white;
+    ;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 50px;
-  }
+}
 
-  .question-space{
+.question-space {
     text-align: center;
-
     position: relative;
     clear: left;
     font-size: 60px;
+}
 
-
-  }
-
-  .leaderboard{
+.leaderboard {
     font-size: 50px;
- 
-  }
- 
+}
 
-  .player-status{
-      color: white;
-      font-size: 40px;
-  }
+.player-status {
+    color: white;
+    font-size: 40px;
+}
 
-  .column {
+.column {
     float: left;
     padding: 0px;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
-  
-  .left {
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+.left {
     width: 75%;
     color: white
-  }
-  
-  .right {
+}
+
+.right {
     font-size: 80px;
     width: 25%;
     color: white;
     background: red;
     padding-top: 300px;
-  }
+}
 
-  .screen:after {
+.screen:after {
     content: "";
     display: table;
     clear: both;
-  }
-  
-.bottom{
+}
+
+.bottom {
     background: red;
     padding-top: 200px;
 }
 
-button.wrong{
-  background: red;
-
+button.wrong {
+    background: red;
 }
 
-button.rightAns{
-  background:green;
-
+button.rightAns {
+    background: green;
 }
 
-.options{
-
-  background: white;
-  color: black
-
-
+.options {
+    background: white;
+    color: black
 }
 
-.options:hover{
-
-  border: 10px;
-  border-color: black
-
-
+.options:hover {
+    border: 10px;
+    border-color: black
 }
+
 
 /* summary  */
 
-.congratsHeader{
-  padding-top: 0px;
-  color: rgb(0, 255, 13);
-  font-style: italic;
-  font-size: 100px;
-  text-align: center;
-  font-family: BebasNeue;
+.congratsHeader {
+    padding-top: 0px;
+    color: rgb(0, 255, 13);
+    font-style: italic;
+    font-size: 100px;
+    text-align: center;
+    font-family: BebasNeue;
 }
 
-#leaderboard{
-  background-color: grey; /* Grey */
-  border: solid 10px rgb(207, 211, 200);
-  color: yellowgreen;
-  padding: 30px 30px;
-  text-align: center-right;
-  font-size: 30px;
+#leaderboard {
+    background-color: grey;
+    /* Grey */
+    border: solid 10px rgb(207, 211, 200);
+    color: yellowgreen;
+    padding: 30px 30px;
+    text-align: center-right;
+    font-size: 30px;
 }
-#playAgain{
-  background-color: grey; /* Grey */
-  border: solid 10px rgb(207, 211, 200);
-  color: yellowgreen;
-  padding: 30px 30px;
-  text-align: center-right;
-  font-size: 30px;
-   
+
+#playAgain {
+    background-color: grey;
+    /* Grey */
+    border: solid 10px rgb(207, 211, 200);
+    color: yellowgreen;
+    padding: 30px 30px;
+    text-align: center-right;
+    font-size: 30px;
 }

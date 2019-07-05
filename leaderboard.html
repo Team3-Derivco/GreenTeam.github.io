@@ -5,17 +5,17 @@
     <meta charset="utf-8">
     <title>Leaderboard Scores</title>
     <link rel="stylesheet" href="stylesheet.css">
-   
+
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
     <!---->
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
-    
-      <script>
-            var beep = new Audio();
-            beep.src="button-7.mp3";
-            beep.play();
-            </script> 
-    
+
+    <script>
+        var beep = new Audio();
+        beep.src = "button-7.mp3";
+        beep.play();
+    </script>
+
 </head>
 
 <body>
@@ -23,18 +23,18 @@
 
     <header class="selectionHeader">MovieNight</header>
     <header class="selectionHeader">High Scores</header>
-    
+
     <!-- <div>ADD LEADERBOARD HERE</div> -->
     <script>
-    function playAgain(){
-        document.location.href = "index.html"
-    }   
+        function playAgain() {
+            document.location.href = "index.html"
+        }
     </script>
     <div onclick="playAgain()">
-        <button  id="playAgain" style="float: right" onmousedown="beep.play()">Play Again</button>
+        <button id="playAgain" style="float: right" onmousedown="beep.play()">Play Again</button>
     </div>
-    <div id="leaderboard">  </div>
-   
+    <div id="leaderboard"> </div>
+
 
     <script>
         // Your web app's Firebase configuration
@@ -52,7 +52,7 @@
         // create database 
         const database = firebase.database();
     </script>
-     <script src="leaderboard.js"></script>
+    <script src="leaderboard.js"></script>
 </body>
 
 </html>
