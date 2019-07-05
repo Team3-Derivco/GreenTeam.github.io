@@ -277,7 +277,10 @@ button.rightAns {
 
 .options {
     background: white;
-    color: black
+    color: black;
+    border-radius: 20px;
+    width: 400px;
+    text-align: center;
 }
 
 .options:hover {
