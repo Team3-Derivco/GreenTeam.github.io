@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Your Score!</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+    <!---->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+    
+    <script>
+    var beep = new Audio();
+    beep.src="button-7.mp3";
+    beep.play();
+    </script> 
+    
+</head>
+
+<body>
+    <header class="selectionHeader">MovieNight</header>
+    <header class="congratsHeader" id = "congratsHeader"></header>
+    <div class="congratsHeader" id ="score"> </div>
+    <!-- <div>ADD LEADERBOARD HERE</div> -->
+    <script>
+    function playAgain(){
+        document.location.href = "GenreSelection.html"
+    }  
+    function leaderboard(){
+        document.location.href = "Leaderboard.html"
+    } 
+    </script>
+    <div onclick="leaderboard()">
+
+         <button  id="leaderboard" style="float: right" onmousedown="beep.play()">Leaderboard</button>
+        
+    </div>
+    <div onclick="playAgain()">
+
+        <button  id="playAgain" style="float: right" onmousedown="beep.play()">Play Again</button>
+        
+    </div>
+   <script src = "summary.js"></script> 
+</body>
+
+</html>

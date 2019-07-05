@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MovieNight</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-database.js"></script>
+        
+         <script>
+                var jungle = new Audio();
+                jungle.src="jungle-run-01.mp3";
+                jungle.play();
+                </script> 
+       
+    </head>
+
+    <body onmousedown="jungle.play()">
+
+    
+    <div class="screen">  
+        <div class="column left">
+            <div class="centered">
+            <header id="game-page">MovieNight</header>
+            <div id = "player"></div>
+            <div class="player-status">
+                Score <br>
+                <div class="score" id="score">0</div>
+            </div>
+            
+            <div class="time">10</div>
+                
+            <div class="question-space">
+
+            <p class="question-text"></p>
+            <div>
+                <img src="" id="image">
+            </div>
+          
+                <button id="btn0" class="options"></button>
+                <button id="btn1" class="options"></button>
+                <button id="btn2" class="options"></button>
+                <button id="btn3" class="options"></button>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="column right">
+               
+
+
+                    <div class="leaderboard" id="leaderboard-table">leaderboard
+                        <ol id="leaderboard-list">
+
+                        </ol>
+                      
+                    </div>
+        </div>
+
+    </div>  
+          
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAR5C67Mg36TlW54xwPPCPNvhNniuuHndw",
+            authDomain: "movienight2019-c65db.firebaseapp.com",
+            databaseURL: "https://movienight2019-c65db.firebaseio.com",
+            projectId: "movienight2019-c65db",
+            storageBucket: "movienight2019-c65db.appspot.com",
+            messagingSenderId: "442067583712",
+            appId: "1:442067583712:web:b47be1cef089b1fb"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        // create database 
+        const database = firebase.database();
+    </script>
+          <script src="app.js"></script>
+    </body>
+</html>
+
